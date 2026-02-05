@@ -22,3 +22,23 @@ const clock2 = stopWatch();
 console.log(clock2());
 console.log(clock1());
 
+
+//closure hote hole ekta function er vhitore arekta function hotei hobe (nested function)
+//bahirer j fuinction ta ase eta more jawr porero bhitorer funtion ta eta k jibito rakhe ;(closure)
+// javaScript e private variable bananur somoy amr closure use kori ;
+
+
+// an example of bankBalance
+function bankBalance (initialBalance){
+      let balance = initialBalance;
+      return function(amount){
+            if(amount < 0){
+                  return 'invalid balance';
+            }
+            balance = balance + amount;
+            return `New Balance ${balance}`
+      }
+}
+const balance1 = bankBalance(100);
+console.log(balance1(50));
+console.log(balance1(20));
