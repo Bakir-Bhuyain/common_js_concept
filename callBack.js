@@ -29,3 +29,8 @@ calculation(10, 5, subtract); // Output: Result is: 5
 
 // গুণ করতে চাইলে 'multiply' কে পাঠাচ্ছি
 calculation(10, 5, multiply); // Output: Result is: 50
+
+
+
+// shob ek sathe
+
