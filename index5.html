@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      /* জাভাস্ক্রিপ্ট দিয়ে বানানো ডিভ-এর স্টাইল */
+      .todo-box {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        background-color: rgb(233, 213, 176);
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Common js function</h1>
+    </header>
+    <main id="main-container">
+      <button onclick="loadTodos()">Load Todos</button>
+      <div id="div-container"></div>
+    </main>
+
+    <script src="./index5.js"></script>
+  </body>
+</html>
